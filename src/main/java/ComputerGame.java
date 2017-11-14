@@ -1,7 +1,7 @@
 public class ComputerGame {
 
-    float price;
-    ComputerGameParameters parameters;
+    private float price;
+    private ComputerGameParameters parameters;
 
     public ComputerGame(float price, ComputerGameParameters parameters)
     {
@@ -28,4 +28,5 @@ public class ComputerGame {
     {
         this.parameters = parameters;
     }
+
 }

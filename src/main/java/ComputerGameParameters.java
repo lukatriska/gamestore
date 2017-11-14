@@ -45,9 +45,9 @@ public class ComputerGameParameters
         return genres;
     }
 
-    public void setGenres(ArrayList<Genre> genres)
+    public void addGenres(Genre genrre)
     {
-        this.genres = genres;
+        this.genres.add(genrre);
     }
 
     public ArrayList<Platform> getPlatforms()
@@ -55,21 +55,9 @@ public class ComputerGameParameters
         return platforms;
     }
 
-    public void setPlatforms(ArrayList<Platform> platforms)
+    public void addPlatforms(Platform platform)
     {
-        this.platforms = platforms;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "ComputerGameParameters{" +
-                "name='" + name + '\'' +
-                ", ageRestriction=" + ageRestriction +
-                ", genres=" + genres +
-                ", platforms=" + platforms +
-                ", description='" + description + '\'' +
-                '}';
+        this.platforms.add(platform);
     }
 
     public String getDescription()
